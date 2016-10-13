@@ -1,0 +1,106 @@
+/* main color #d6b7b7 (rgb 214 183 18) */
+/* secondary color #ab6d6d 171 109 109  */
+/* dark grey color #595959 */
+
+body {
+    margin:0;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    max-width: 70%;
+}
+
+h1 {
+    color: #d6b7b7;
+    font-size: 2rem;
+}
+
+h2 {
+    color: #d6b7b7;
+    font-size: 1rem;
+}
+
+h3 {
+    color: #595959;
+    font-size: 0.8rem;
+}
+
+p {
+    color: #595959;
+    font-size: 1rem;
+}
+
+.aMenu {
+    color: white;
+}
+
+footer {
+    background-color: #d6b7b7;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+p.footerText {
+    text-align: center;
+    font-size: 0.2rem;
+    color: white;
+}
+
+
+/*meny*/
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #d6b7b7;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+ul.topnav li a:hover {background-color: #ab6d6d;}
+
+ul.topnav li.icon {
+    display: none;
+}
+    /*slutt på meny*/
+
+    /*media queries for små skjermer*/
+@media screen and (max-width:500px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:500px) {
+  ul.topnav.responsive {
+      position: relative;
+    }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+    }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+    }
+}

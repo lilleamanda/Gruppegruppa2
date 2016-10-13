@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uteliv</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="minTopnav">
+            <li><a class="active aMenu" href="index.html">iFredrikstad</a></li>
+            <li><a class="aMenu" href="uteliv.html">Uteliv</a></li>
+            <li><a class="aMenu" href="shopping.html">Shopping</a></li>
+            <li><a class="aMenu" href="tingase.html">Ting å se</a></li>
+            <li><a class="aMenu" href="kontakt.html">Kontakt</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:1em;" onclick="myFunction()">☰</a>
+            </li>
+        </ul>
+    </nav>
+<main>
+    <section>
+        <h1>Kaféer</h1>
+            <img src="cafe.jpg">
+            <p>De beste kaféene i Fredrikstad</p>
+    </section>
+    <section>
+        <h1>Restauranter</h1>
+            <img src="mat.jpg">
+            <p>De beste restaurantene i Fredrikstad</p>
+    </section>
+    <section>
+        <h1>Barer</h1>
+            <img src="uteliv.jpg">
+            <p>De beste uteplassene i Fredrikstad</p>
+    </section>
+</main>
+    <footer>
+        <section id="footerSec">
+        <p class="footerText">
+                Turistkontoret i Fredrikstad
+        </p>
+        <p class="footerText">
+                Møllergata 31, 1613 Fredrikstad
+        </p>
+        <p class="footerText">
+                Åpningstider:
+                Man-Fre 09:00-17:00
+        </p>
+        </section>
+    </footer>
+<script>
+    /*Lage responsive drop-down*/
+    function myFunction() {
+        var x = document.getElementById("minTopnav");
+        
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>
+
