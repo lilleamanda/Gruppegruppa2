@@ -17,7 +17,7 @@ img {
 max-width: 100%;
     height: auto;
 }
-    
+
 h1 {
     color: #d6b7b7;
     font-size: 2rem;
@@ -81,6 +81,18 @@ ul.topnav li.icon {
     display: none;
 }
     /*slutt på meny*/
+
+
+footer ul{ /*footer*/
+  width: 100%;
+  text-align: left;
+  list-style: none;
+  color: white;
+  padding-left: 0;
+  background: #222;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 
     /*media queries for små skjermer*/
 @media screen and (max-width:500px) {
