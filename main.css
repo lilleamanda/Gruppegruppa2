@@ -13,6 +13,11 @@ main {
     max-width: 70%;
 }
 
+img {
+max-width: 100%;
+    height: auto;
+}
+    
 h1 {
     color: #d6b7b7;
     font-size: 2rem;
