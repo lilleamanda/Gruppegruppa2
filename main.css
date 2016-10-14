@@ -57,7 +57,6 @@ table {
 body {
     margin:0;
     width: 100vw;
-
 }
 
 main {
@@ -65,20 +64,32 @@ main {
     margin-right: auto;
     clear: both;
     position: relative;
-
 }
 
 .bilde-top {
   background-repeat: no-repeat;
   background-position: center, center;
   margin: 0 auto;
-  background-image: url("bilder/elv.jpg");
   display: table;
   height: 20rem;
   width: 100%;
   background-size: cover;
   z-index: 2;
   position: relative;
+ }
+
+ body.uteliv .bilde-top { /*Skifter headerbilde på hver ulike side*/
+	 background-image: url("bilder/elv.jpg");
+ }
+
+ body.kafeer .bilde-top { /*Skifter headerbilde på hver ulike side*/
+		 background-image: url("bilder/cafe_small.jpg");
+ }
+
+ @media screen and (min-width:32em){
+	  body.kafeer .bilde-top{
+		 background-image: url("bilder/cafe.jpg");
+	}
  }
 
 .box-top{
@@ -88,15 +99,18 @@ main {
   z-index: 3;
   border-top: 10rem solid rgba(255,255,255,0.7);
   border-right: 100vw solid transparent;
-
 }
 
 section {
   max-width: 90%;
   margin: 1em auto 1em auto;
-  z-index: 11;
 	padding-top: 1em;
+}
 
+article {
+	max-width: 90%;
+  margin: 1em auto 1em auto;
+	padding-top: 1em;
 }
 
 img {
@@ -118,12 +132,13 @@ h2 {
     color: black;
     font-size: 2rem;
     font-family: 'Trirong', serif;
-			text-shadow: 1px 1px 1px #3a3a3a;
+		text-shadow: 1px 1px 1px #3a3a3a;
 }
 
 h3 {
-    color: #595959;
-    font-size: 1rem;
+		color: black;
+		font-size: 1.5rem;
+		font-family: 'Trirong', serif;
 }
 
 p {
@@ -131,18 +146,27 @@ p {
     font-size: 0.75rem;
     font-family: 'Montserrat', serif;
 		padding-top: 0.75em;
+		padding-bottom: 0.75em;
+		line-height: 1.2em;
 }
 
+h2 a,
+h2 a:link,
+h2 a:visited {
+	font-size: 2rem;
+}
 a,
 a:link,
 a:visited{
 	color: black;
 	text-decoration: none;
-
+	font-family: 'Montserrat', serif;
+	font-size: 0.8rem;
 }
 
 a:hover {
 	color: rgb(252, 203, 55);
+	transition: 0.2s;
 }
 
 main p a,
@@ -155,34 +179,49 @@ main p a:visited {
 
 main p a:hover {
 	color: rgb(252, 203, 55);
+	transition: 0.2s;
 }
+
+
 /*meny*/
 ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #222;
+  background-color: white;
+	color: black;
+	position: fixed;
+	height: 2rem;
+	z-index: 99;
+	width: 100%;
 }
 
-ul.topnav li {float: left;}
+ul.topnav li {
+	float: left;
+}
+
 
 ul.topnav li a {
   display: inline-block;
-  color: white;
   text-align: center;
   padding: 0.8rem;
   text-decoration: none;
   transition: 0.3s;
   font-size: 1rem;
   font-family: 'Montserrat', serif;
+	z-index: 99;
 
 }
 
-ul.topnav li a:hover {background-color: rgb(252, 203, 55);}
+ul.topnav li a:hover {
+	background-color: rgb(252, 203, 55);
+	color: black;
+}
 
 ul.topnav li.icon {
     display: none;
+
 }
     /*slutt på meny*/
 
