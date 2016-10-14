@@ -1,56 +1,185 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***************************************************************/
+/***************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Trirong);
+
 /* main color #d6b7b7 (rgb 214 183 18) */
 /* secondary color #ab6d6d 171 109 109  */
 /* dark grey color #595959 */
 
 body {
     margin:0;
+    width: 100vw;
 }
 
 main {
     margin-left: auto;
     margin-right: auto;
     clear: both;
-    max-width: 70%;
+    position: relative;
+}
+
+.bilde-top {
+  background-repeat: no-repeat;
+  background-position: center, center;
+  margin: 0 auto;
+  display: table;
+  height: 20rem;
+  width: 100%;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+ }
+
+ body.uteliv .bilde-top { /*Skifter headerbilde på hver ulike side*/
+	 background-image: url("bilder/elv.jpg");
+ }
+
+ body.kafeer .bilde-top { /*Skifter headerbilde på hver ulike side*/
+		 background-image: url("bilder/cafe_small.jpg");
+ }
+
+ @media screen and (min-width:32em){
+	  body.kafeer .bilde-top{
+		 background-image: url("bilder/cafe.jpg");
+	}
+ }
+
+.box-top{
+  height: 0rem;
+  width: 0;
+  position: absolute;
+  z-index: 3;
+  border-top: 10rem solid rgba(255,255,255,0.7);
+  border-right: 100vw solid transparent;
+}
+
+section {
+  max-width: 90%;
+  margin: 1em auto 1em auto;
+	padding-top: 1em;
+}
+
+article {
+	max-width: 90%;
+  margin: 1em auto 1em auto;
+	padding-top: 1em;
 }
 
 img {
-max-width: 100%;
+    width: 100%;
     height: auto;
 }
-    
+
 h1 {
-    color: #d6b7b7;
-    font-size: 2rem;
+    color: black;
+    font-size: 2.5rem;
+    font-family: 'Trirong', serif;
+    position: absolute;
+    z-index: 4;
+    margin-left: 1rem;
+    margin-top: 2rem;
 }
 
 h2 {
-    color: #d6b7b7;
-    font-size: 1rem;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Trirong', serif;
+		text-shadow: 1px 1px 1px #3a3a3a;
 }
 
 h3 {
-    color: #595959;
-    font-size: 0.8rem;
+		color: black;
+		font-size: 1.5rem;
+		font-family: 'Trirong', serif;
 }
 
 p {
     color: #595959;
-    font-size: 1rem;
+    font-size: 0.75rem;
+    font-family: 'Montserrat', serif;
+		padding-top: 0.75em;
+		padding-bottom: 0.75em;
+		line-height: 1.2em;
 }
 
-.aMenu {
-    color: white;
+h2 a,
+h2 a:link,
+h2 a:visited {
+	font-size: 2rem;
+}
+a,
+a:link,
+a:visited{
+	color: black;
+	text-decoration: none;
+	font-family: 'Montserrat', serif;
+	font-size: 0.8rem;
 }
 
-footer {
-    background-color: #d6b7b7;
-    padding: 0.1rem 1rem 0.1rem 1rem;
+a:hover {
+	color: rgb(252, 203, 55);
+	transition: 0.2s;
 }
 
-p.footerText {
-    text-align: center;
-    font-size: 0.2rem;
-    color: white;
+main p a,
+main p a:link,
+main p a:visited {
+		color: rgb(150,150,150);
+		text-decoration: none;
+		margin-left: 1.25rem;
+}
+
+main p a:hover {
+	color: rgb(252, 203, 55);
+	transition: 0.2s;
 }
 
 
@@ -60,27 +189,65 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #d6b7b7;
+  background-color: white;
+	color: black;
+	width: 100%;
 }
 
-ul.topnav li {float: left;}
+ul.topnav li {
+	float: left;
+}
+
 
 ul.topnav li a {
   display: inline-block;
-  color: white;
   text-align: center;
   padding: 0.8rem;
   text-decoration: none;
   transition: 0.3s;
   font-size: 1rem;
+  font-family: 'Montserrat', serif;
+	z-index: 99;
+
 }
 
-ul.topnav li a:hover {background-color: #ab6d6d;}
+ul.topnav li a:hover {
+	background-color: rgb(252, 203, 55);
+	color: black;
+}
 
 ul.topnav li.icon {
     display: none;
+
 }
     /*slutt på meny*/
+
+footer {
+  width: 100%;
+  text-align: left;
+  list-style: none;
+  color: white;
+  background: #222;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding: 2rem 2rem;
+  margin-top: 4rem;
+  box-sizing: border-box;
+
+}
+
+footer ul{ /*footer*/
+  text-align: left;
+  list-style: none;
+  color: white;
+  padding-left: 0;
+  font-family: 'Montserrat', serif;
+  font-size: 0.75rem;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+
+
 
     /*media queries for små skjermer*/
 @media screen and (max-width:500px) {

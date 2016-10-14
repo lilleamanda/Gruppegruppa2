@@ -1,0 +1,109 @@
+/* main color #d6b7b7 (rgb 214 183 18) */
+/* secondary color #ab6d6d 171 109 109  */
+/* dark grey color #595959 */
+
+h1 {
+    color: #d6b7b7;
+    font-size: 2rem;
+}
+
+h1#topOverskrift {
+    color: white;
+    float: right;
+    margin: 0px;
+    margin-right: 10%;
+    padding: 0px;
+    line-height: 1rem;
+}
+
+h2 {
+    color: #d6b7b7;
+    font-size: 1rem;
+}
+
+h3 {
+    color: #595959;
+    font-size: 0.8rem;
+}
+
+p {
+    color: #595959;
+    font-size: 1rem;
+}
+
+p.ingress {
+    color: #595959;
+    font-size: 0.6rem;
+}
+
+a {
+    color: #ab6d6d;
+    text-decoration: none;
+}
+
+.aMenu {
+    color: white;
+}
+
+a:link {
+    color: #ab6d6d;
+    text-decoration: none;
+}
+
+a:visited { 
+   color: #ab6d6d; 
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: #d6b7b7;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1%;
+}
+
+a.aMenu {
+    color: white;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    max-width: 70%;
+}
+
+header {}
+
+footer {
+    background-color: #d6b7b7;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+}
+
+#footerSec {}
+
+p.footerText {
+    text-align: center;
+    font-size: 0.2rem;
+    color: white;
+}
+
+section {}
+
+article {}
+

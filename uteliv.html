@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Uteliv</title>
+    <title>Uteliv - iFredrikstad</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
-<body>
+<body class="uteliv">
+  <header>
     <nav>
         <ul class="topnav" id="minTopnav">
             <li><a class="active aMenu" href="index.html">iFredrikstad</a></li>
-            <li><a class="aMenu" href="uteliv.html">Uteliv</a></li>
-            <li><a class="aMenu" href="shopping.html">Shopping</a></li>
-            <li><a class="aMenu" href="tingase.html">Ting å se</a></li>
-            <li><a class="aMenu" href="kontakt.html">Kontakt</a></li>
+            <li><a class="aMenu" href="severdigheter.html">SEVERDIGHETER</a></li>
+            <li><a class="aMenu" href="uteliv.html">UTELIV</a></li>
+            <li><a class="aMenu" href="shopping.html">SHOPPING</a></li>
             <li class="icon">
                 <a href="javascript:void(0);" style="font-size:1em;" onclick="myFunction()">☰</a>
             </li>
         </ul>
     </nav>
+    <h1>UTELIV</h1>
+    <div class="box-top"></div>
+    <div class="bilde-top"></div>
+  </header>
 <main>
+    <p><a href="index.html">iFredrikstad</a><a href="uteliv.html">Uteliv</a><a href="#">KategoriHer</a></p>
     <section>
-        <h1>Kaféer</h1>
-            <img src="uteliv_small.jpg">
+        <h2><a href="kafeer.html">Kaféer</a></h2>
+            <img src="bilder/cafe_small.jpg" alt="Kafeer i Fredrikstad">
             <p>De beste kaféene i Fredrikstad</p>
     </section>
     <section>
-        <h1>Restauranter</h1>
-            <img src="mat.jpg">
+        <h2><a href="restauranter.html">Restauranter</a></h2>
+            <img src="bilder/restauranter_small.jpg" alt="Restauranter i Fredrikstad">
             <p>De beste restaurantene i Fredrikstad</p>
     </section>
     <section>
-        <h1>Barer</h1>
-            <img src="uteliv.jpg">
+        <h2><a href="barer.html">Barer</a></h2>
+            <img src="bilder/uteliv_small.jpg" alt="Uteliv i Fredrikstad">
             <p>De beste uteplassene i Fredrikstad</p>
     </section>
 </main>
-    <footer>
-        <section id="footerSec">
-        <p class="footerText">
-                Turistkontoret i Fredrikstad
-        </p>
-        <p class="footerText">
-                Møllergata 31, 1613 Fredrikstad
-        </p>
-        <p class="footerText">
-                Åpningstider:
-                Man-Fre 09:00-17:00
-        </p>
-        </section>
+    <footer id="slide4" class="footerslide">
+      <ul>
+        <li>iFredrikstad</li>
+        <li>Telefon: 999 99 999</li>
+      </ul>
+      <ul>
+        <li>Adresse:</li>
+        <li>Storgata 3</li>
+        <li>1613 Fredrikstad</li>
+      </ul>
+      <ul>
+          <li>Åpningstider:</li>
+          <li>Man - fre: 10 - 16</li>
+          <li>Lørdag: 10 - 14</li>
+      </ul>
     </footer>
 <script>
-    /*Lage responsive drop-down*/
+    /*Lager responsive drop-down*/
     function myFunction() {
         var x = document.getElementById("minTopnav");
-        
+
         if (x.className === "topnav") {
             x.className += " responsive";
         } else {
@@ -63,4 +73,3 @@
 </script>
 </body>
 </html>
-
