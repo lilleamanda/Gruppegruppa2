@@ -191,9 +191,6 @@ ul.topnav {
   overflow: hidden;
   background-color: white;
 	color: black;
-	position: fixed;
-	height: 2rem;
-	z-index: 99;
 	width: 100%;
 }
 
