@@ -11,14 +11,18 @@
 </head>
 <body>
 	<header>
-		<nav class="meny">
-			<ul>
-				<li><a href="index.html">HJEM</a></li>
-				<li><a href="severdigheter.html">SEVERDIGHETER</a></li>
-				<li><a href="uteliv.html">UTELIV</a></li>
-				<li><a href="shopping.html">SHOPPING</a></li>
-			</ul>
-		</nav>
+		<nav>
+        <ul class="topnav" id="minTopnav">
+            <li><a class="active aMenu" href="index.html">iFredrikstad</a></li>
+            <li><a class="aMenu" href="uteliv.html">Uteliv</a></li>
+            <li><a class="aMenu" href="shopping.html">Shopping</a></li>
+            <li><a class="aMenu" href="tingase.html">Ting å se</a></li>
+            <li><a class="aMenu" href="kontakt.html">Kontakt</a></li>
+            <li class="icon">
+                <a class="hamburger"; href="javascript:void(0);" style="font-size:1em;" onclick="myFunction()">☰</a>
+            </li>
+        </ul>
+    </nav>
 	</header>
 	<main id="parallax">
 		<section id="title" class="slide">
@@ -55,6 +59,18 @@
 				<li>Lørdag: 10 - 14</li>
 		</ul>
 	</footer>
+    <script>
+    /*Lager responsive drop-down*/
+    function myFunction() {
+        var x = document.getElementById("minTopnav");
+
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
 	</main>
 </body>
 </html>
