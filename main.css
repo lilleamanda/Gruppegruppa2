@@ -279,3 +279,24 @@ footer ul{ /*footer*/
     text-align: left;
     }
 }
+
+@media print {
+    
+    img{
+        display: none;
+    }
+    
+    .bilde-top {
+        -webkit-filter: grayscale(100%);
+    }
+    
+    footer {
+        background:none;
+    }
+        
+    footer ul {
+        color: black;
+    } 
+    }
+    
+
