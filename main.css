@@ -46,13 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/***************************************************************/
-/***************************************************************/
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Trirong);
 
-/* main color #d6b7b7 (rgb 214 183 18) */
-/* secondary color #ab6d6d 171 109 109  */
-/* dark grey color #595959 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Trirong');
 
 body {
     margin:0;
@@ -281,22 +277,20 @@ footer ul{ /*footer*/
 }
 
 @media print {
-    
+
     img{
         display: none;
     }
-    
+
     .bilde-top {
         filter: grayscale(100%);
     }
-    
+
     footer {
         background:none;
     }
-        
+
     footer ul {
         color: black;
-    } 
     }
-    
-
+    }
