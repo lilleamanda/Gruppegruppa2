@@ -46,9 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/***************************************************************/
-/***************************************************************/
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Trirong);
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Trirong');
 
 body {
     margin:0;
@@ -277,22 +277,20 @@ footer ul{ /*footer*/
 }
 
 @media print {
-    
+
     img{
         display: none;
     }
-    
+
     .bilde-top {
         -webkit-filter: grayscale(100%);
     }
-    
+
     footer {
         background:none;
     }
-        
+
     footer ul {
         color: black;
-    } 
     }
-    
-
+    }
