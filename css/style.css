@@ -13,6 +13,10 @@ body {
   height: 100%;
 }
 
+.hamburger {
+    display: none;
+}
+
 header{
   position: fixed;
   top:0;
@@ -37,7 +41,7 @@ header nav ul{
 
 header nav ul li{
     display: inline-block;
-    margin-right: 2rem;
+    margin-right: 0,7rem;
 
 }
 
@@ -49,6 +53,9 @@ header nav ul li a{
     font-family: 'Montserrat', serif;
     color: black;
     margin-right: 6rem;
+}
+header nav ul li a:hover {
+    color: rgb(252, 203, 55);
 }
 
 #parallax{
@@ -84,7 +91,8 @@ h2 a {
 }
 
 h2 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(252, 203, 55);
 }
 
 p {
@@ -187,8 +195,6 @@ p {
   padding-right: 5rem;
 }
 
-
-
 footer ul{
   text-align: left;
   list-style: none;
@@ -245,27 +251,80 @@ footer ul{
       transform: none;
       z-index: 0;
     }
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Mobiltelefonen/Ipad */
 
 @media	only	screen	and	(max-width	:	900px)	{
-      
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1rem;
+  font-family: 'Montserrat', serif;
+}
+
+ul.topnav li a:hover {background-color: rgb(252, 203, 55);}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+ul.topnav li:not(:first-child) {display: none;}
+ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+}
+
+ul.topnav.responsive {
+      position: relative;
+}
+ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+ul.topnav.responsive li {
+    float: none;
+    display: inline;
+}
+ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+}
+
+
+
 html {
   height: 100%;
   overflow: hidden;
@@ -286,38 +345,6 @@ header{
   width: 100%;
   z-index: 9999;
 }
-
-header nav{
-    display: none;
-  /*width: 100%;
-  height: 2rem;
-  background: white;
-  padding:0.5rem 0 0 0;*/
-}
-
-/*header nav ul{
-    margin: 0 auto;
-    width: 100%;
-    list-style: none;
-    text-align: center;
-}
-
-header nav ul li{
-    display: inline-block;
-    margin-right: 2rem;
-
-}
-
-header nav ul li a{
-    display: block;
-  	width: 100%;
-    font-size: 1rem;
-    text-decoration: none;
-    font-family: 'Montserrat', serif;
-    color: black;
-    margin-right: 6rem;
-}*/
-
 
 h1 {
    font-family: 'Trirong', serif;
@@ -368,8 +395,6 @@ p {
   border-bottom: 10rem solid rgba(255,255,255,1);
 }
 
-
-
 .slide {
   position: relative;
   padding: 25vh 0;
@@ -378,9 +403,9 @@ p {
   box-sizing: border-box;
   transform-style: inherit;
 }
-    .slide .box h2{
-            position: relative;
-    }
+.slide .box h2 {
+  position: relative;
+}
 
 .slide:before {
   content: "";
@@ -441,8 +466,6 @@ p {
   padding-right: 5rem;
 }
 
-
-
 footer ul{
   text-align: left;
   list-style: none;
@@ -481,6 +504,6 @@ footer ul{
 .footerslide, .footerslide:before {
   background: 50% 50% / cover;
 }
-    
-    }
+
+}
 }
