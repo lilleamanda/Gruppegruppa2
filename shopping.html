@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping - iFredrikstad</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body class="shopping">
+  <header>
+    <nav>
+        <ul class="topnav" id="minTopnav">
+            <li><a class="active aMenu" href="index.html">iFredrikstad</a></li>
+            <li><a class="aMenu" href="severdigheter.html">SEVERDIGHETER</a></li>
+            <li><a class="aMenu" href="uteliv.html">UTELIV</a></li>
+            <li><a class="aMenu" href="shopping.html">SHOPPING</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" style="font-size:1em;" onclick="myFunction()">☰</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Shopping</h1>
+    <div class="box-top"></div>
+    <div class="bilde-top"></div>
+  </header>
+<main>
+    
+    <section>
+        <h2>Torvbyen</h2>
+            <img src="bilder/torvbyen.jpg" alt="Torvbyen">
+            <p>Torvbyen er Østfolds ledende kjøpesenter og har med sine 80 butikker et 
+			stort utvalg av shoppingbutikker, spesialbutikker og tjenester. Her finnes 
+			butikker for alle, uansett alder!Senteret er et tidsriktig senter med lyse 
+			og moderne lokaler som skal inspirere og invitere til en god shoppingopplevelse.
+			Senteret ligger midt i Fredrikstad sentrum, rett ved innfartsårene fra Sarpsborg 
+			og Moss. Bussterminalen ligger i bygget og det er ca 2 minutter til jernbanestasjonen med bil</p>
+    </section>
+    <section>
+        <h2>Østfoldhallene</h2>
+            <img src="bilder/ostfoldhallen.jpg" alt="Østfoldhallen">
+            <p>Østfoldhallene ligger midt mellom Sarpsborg og Fredrikstad, og er det største kjøpesenteret 
+			i Østfold. Med 67 butikker fordelt over 5 haller har vi et stort utvalg i alt fra klær 
+			og mote til sport, interiør, elektronikk, oppussing og bygg.</p>
+    </section>
+    <section>
+        <h2>Frimarked i gamlebyen</h2>
+            <img src="bilder/frimarked.jpg" alt="Frimarked i gamlebyen">
+            <p>Hver lørdag, kl 10:00 - 16:00 (søndag kl 12:00 - 16:00 i juli), i perioden april til desember (jul) 
+			forvandles torvet til et sydende marked der man kan gjøre morsomme og gode funn!Bare det å gå rundt å 
+			titte og ta inn over seg stemningen og den hyggelige og avslappende atmosfæren er en opplevelse i seg selv.</p>
+    </section>
+</main>
+    <footer id="slide4" class="footerslide">
+      <ul>
+        <li>iFredrikstad</li>
+        <li>Telefon: 999 99 999</li>
+      </ul>
+      <ul>
+        <li>Adresse:</li>
+        <li>Storgata 3</li>
+        <li>1613 Fredrikstad</li>
+      </ul>
+      <ul>
+          <li>Åpningstider:</li>
+          <li>Man - fre: 10 - 16</li>
+          <li>Lørdag: 10 - 14</li>
+      </ul>
+    </footer>
+<script>
+    /*Lager responsive drop-down*/
+    function myFunction() {
+        var x = document.getElementById("minTopnav");
+
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>
