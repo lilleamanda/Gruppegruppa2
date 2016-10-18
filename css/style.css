@@ -54,6 +54,9 @@ header nav ul li a{
     color: black;
     margin-right: 6rem;
 }
+header nav ul li a:hover {
+    color: rgb(252, 203, 55);
+}
 
 #parallax{
   perspective: 1px;
@@ -88,7 +91,8 @@ h2 a {
 }
 
 h2 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: rgb(252, 203, 55);
 }
 
 p {
@@ -247,28 +251,28 @@ footer ul{
       transform: none;
       z-index: 0;
     }
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Mobiltelefonen/Ipad */
-    
+
 @media	only	screen	and	(max-width	:	900px)	{
-    
-    
+
+
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -295,13 +299,13 @@ ul.topnav li a:hover {background-color: rgb(252, 203, 55);}
 ul.topnav li.icon {
     display: none;
 }
-    
+
 ul.topnav li:not(:first-child) {display: none;}
 ul.topnav li.icon {
     float: right;
-    display: inline-block;    
+    display: inline-block;
 }
-    
+
 ul.topnav.responsive {
       position: relative;
 }
@@ -318,9 +322,9 @@ ul.topnav.responsive li a {
     display: block;
     text-align: left;
 }
-    
-    
-      
+
+
+
 html {
   height: 100%;
   overflow: hidden;
@@ -500,6 +504,6 @@ footer ul{
 .footerslide, .footerslide:before {
   background: 50% 50% / cover;
 }
-    
+
 }
 }
