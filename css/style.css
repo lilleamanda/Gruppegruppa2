@@ -1,240 +1,211 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito);
 @import url(https://fonts.googleapis.com/css?family=Montserrat|Trirong);
-
 html {
-  height: 100%;
-  overflow: hidden;
+	height: 100%;
+	overflow: hidden;
 }
-
 body {
-  margin:0;
-  padding:0;
-  position: relative;
-  height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 100%;
 }
-
 .hamburger {
-    display: none;
+	display: none;
 }
-
-header{
-  position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  z-index: 9999;
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
 }
-
-header nav{
-  width: 100%;
-  height: 2rem;
-  background: white;
-  padding:0.5rem 0 0 0;
+header nav {
+	width: 100%;
+	height: 2rem;
+	background: white;
+	padding: 0.5rem 0 0 0;
 }
-
-header nav ul{
-    margin: 0 auto;
-    width: 100%;
-    list-style: none;
-    text-align: center;
+header nav ul {
+	margin: 0 auto;
+	width: 100%;
+	list-style: none;
+	text-align: center;
 }
-
-header nav ul li{
-    display: inline-block;
-    margin-right: 0,7rem;
-
+header nav ul li {
+	display: inline-block;
+	margin-right: 0.7rem;
 }
-
-header nav ul li a{
-    display: block;
-  	width: 100%;
-    font-size: 1rem;
-    text-decoration: none;
-    font-family: 'Montserrat', serif;
-    color: black;
-    margin-right: 6rem;
+header nav ul li a {
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	text-decoration: none;
+	font-family: 'Montserrat', serif;
+	color: black;
+	margin-right: 6rem;
 }
 header nav ul li a:hover {
-    color: rgb(252, 203, 55);
+	color: rgb(252, 203, 55);
 }
-
-#parallax{
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: relative;
+#parallax {
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: relative;
 }
-
 h1 {
-   font-family: 'Trirong', serif;
-   text-shadow: 2px 2px 4px black;
-   text-align: center;
-   font-size: 5rem;
-   color: #fff;
-   padding-top: 2rem;
+	font-family: 'Trirong', serif;
+	text-shadow: 2px 2px 4px black;
+	text-align: center;
+	font-size: 5rem;
+	color: #fff;
+	padding-top: 2rem;
 }
-
 h2 {
-   font-size: 2.5rem;
-   font-family: 'Trirong', serif;
-   padding-left: 2rem;
-   padding-top: 1.5rem;
-   width: 100rem;
+	font-size: 2.5rem;
+	font-family: 'Trirong', serif;
+	padding-left: 2rem;
+	padding-top: 1.5rem;
+	width: 100rem;
 }
-
 h2 a {
-  color: black;
-  text-decoration: none;
-  text-align: left;
+	color: black;
+	text-decoration: none;
+	text-align: left;
 }
-
 h2 a:hover {
-  text-decoration: none;
-  color: rgb(252, 203, 55);
+	text-decoration: none;
+	color: rgb(252, 203, 55);
 }
-
 p {
-  font-size: 0.75rem;
-  line-height: 150%;
-  color: white;
+	font-size: 0.75rem;
+	line-height: 150%;
+	color: white;
 }
-
 .box {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 15%;
-  width: 0;
-  height: 0;
-  border-bottom: 10rem solid rgba(255,255,255,0.7);
-  border-right: 100vw solid transparent;
-  transition: 0.4s;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 15%;
+	width: 0;
+	height: 0;
+	border-bottom: 10rem solid rgba(255, 255, 255, 0.7);
+	border-right: 100vw solid transparent;
+	transition: 0.4s;
 }
-
 .box:hover {
-  border-bottom: 10rem solid rgba(255,255,255,1);
+	border-bottom: 10rem solid rgba(255, 255, 255, 1);
 }
-
-@media screen and (max-width:32em){
-  .box{
-    border: none;
-  }
+@media screen and (max-width: 32em) {
+	.box {
+		border: none;
+	}
 }
-
 .slide {
-  position: relative;
-  padding: 25vh 0;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  transform-style: inherit;
+	position: relative;
+	padding: 25vh 0;
+	min-height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	transform-style: inherit;
 }
-
-
 .slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
-
 .slide:nth-child(2n) {
-  margin-left: 0;
-  margin-right: auto;
+	margin-left: 0;
+	margin-right: auto;
 }
-
 .slide:nth-child(2n+1) {
-  margin-left: auto;
-  margin-right: 0;
+	margin-left: auto;
+	margin-right: 0;
 }
-
-.slide, .slide:before {
-  background: 50% 50% / cover;
+.slide,
+.slide:before {
+	background: 50% 50% / cover;
 }
-
 #title {
-  background-image: url("../bilder/brygga.jpg");
-  z-index: 10;
+	background-image: url("../bilder/brygga.jpg");
+	z-index: 10;
 }
-
 #slide1:before {
-  background-image: url("../bilder/gamlebyen_fredrikstad.jpg");
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
+	background-image: url("../bilder/gamlebyen_fredrikstad.jpg");
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
 }
-
 #slide2 {
-  z-index:1;
-  overflow: hidden;
-  background-image: url("../bilder/elv.jpg");
-
+	z-index: 1;
+	overflow: hidden;
+	background-image: url("../bilder/elv.jpg");
 }
-
 #slide2:after {
-  background-image: url("../bilder/elv.jpg");
-  transform: translateZ(10px) scale(1);
-  z-index: 9999;
-  position: absolute;
-  top: 0;
+	background-image: url("../bilder/elv.jpg");
+	transform: translateZ(10px) scale(1);
+	z-index: 9999;
+	position: absolute;
+	top: 0;
 }
-
 #slide3:before {
-  background-image: url("../bilder/shopping2.jpg");
-  transform: translateZ(-1px) scale(2);
-  z-index:2;
+	background-image: url("../bilder/shopping2.jpg");
+	transform: translateZ(-1px) scale(2);
+	z-index: 2;
 }
+#slide4 {
+	/*FOOTER*/
 
-#slide4 { /*FOOTER*/
-  background: #222;
-  z-index:3;
-  padding-left: 5rem;
-  padding-right: 5rem;
+	background: #222;
+	z-index: 3;
+	padding-left: 5rem;
+	padding-right: 5rem;
 }
-
-footer ul{
-  text-align: left;
-  list-style: none;
-  color: white;
-  padding-left: 0;
+footer ul {
+	text-align: left;
+	list-style: none;
+	color: white;
+	padding-left: 0;
 }
-
 .footerslide {
-  position: relative;
-  padding: 10vh 0;
-  min-height: 20vh;
-  width: 100vw;
-  box-sizing: border-box;
-  transform-style: inherit;
+	position: relative;
+	padding: 10vh 0;
+	min-height: 20vh;
+	width: 100vw;
+	box-sizing: border-box;
+	transform-style: inherit;
 }
-
 .footerslide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
-
 .footerslide:nth-child(2n) {
-  margin-left: 0;
-  margin-right: auto;
+	margin-left: 0;
+	margin-right: auto;
 }
-
 .footerslide:nth-child(2n+1) {
-  margin-left: auto;
-  margin-right: 0;
+	margin-left: auto;
+	margin-right: 0;
+}
+.footerslide,
+.footerslide:before {
+	background: 50% 50% / cover;
 }
 
-.footerslide, .footerslide:before {
-  background: 50% 50% / cover;
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	html{
+      height: auto;
+      overflow: auto;
+    }
     #parallax{
       transform-style: flat;
     }
@@ -251,259 +222,217 @@ footer ul{
       transform: none;
       z-index: 0;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* Mobiltelefonen/Ipad */
 
-@media	only	screen	and	(max-width	:	900px)	{
+@media only screen and (max-width: 900px) {
+	ul.topnav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #222;
+	}
+	ul.topnav li {
+		float: left;
+	}
+	ul.topnav li a {
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 0.8rem;
+		text-decoration: none;
+		transition: 0.3s;
+		font-size: 1rem;
+		font-family: 'Montserrat', serif;
+	}
+	ul.topnav li a:hover {
+		background-color: rgb(252, 203, 55);
+	}
+	ul.topnav li.icon {
+		display: none;
+	}
+	ul.topnav li:not(:first-child) {
+		display: none;
+	}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+	ul.topnav.responsive {
+		position: relative;
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: Nunito;
+		position: relative;
+		height: 100%;
+	}
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 9999;
+	}
+	h1 {
+		font-family: 'Trirong', serif;
+		text-shadow: 2px 2px 4px black;
+		text-align: center;
+		font-size: 10vw;
+		color: #fff;
+		padding-top: 5rem;
+	}
+	h2 {
+		font-size: 4vw;
+		font-family: 'Trirong', serif;
+		padding-left: 1rem;
+		padding-top: 4rem;
+		width: 100rem;
+	}
+	h2 a {
+		color: black;
+		text-decoration: none;
+		text-align: left;
+	}
+	h2 a:hover {
+		text-decoration: underline;
+	}
+	p {
+		font-size: 0.75rem;
+		line-height: 150%;
+		color: white;
+	}
+	.box {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		height: 10%;
+		width: 0;
+		height: 0;
+		border-bottom: 10rem solid rgba(255, 255, 255, 0.7);
+		border-right: 100vw solid transparent;
+		transition: 0.4s;
+	}
+	.box:hover {
+		border-bottom: 10rem solid rgba(255, 255, 255, 1);
+	}
+	.slide {
+		position: relative;
+		padding: 25vh 0;
+		min-height: 100vh;
+		width: 100vw;
+		box-sizing: border-box;
+		transform-style: inherit;
+	}
+	.slide .box h2 {
+		position: relative;
+	}
+	.slide:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.slide:nth-child(2n) {
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.slide:nth-child(2n+1) {
+		margin-left: auto;
+		margin-right: 0;
+	}
+	.slide,
+	.slide:before {
+		background: 50% 50% / cover;
+	}
+	#title {
+		background-image: url("../bilder/brygga.jpg");
+		z-index: 10;
+	}
+	#slide1:before {
+		background-image: url("../bilder/gamlebyen_fredrikstad.jpg");
+		/*transform: translateZ(-1px) scale(2);*/
 
+		z-index: -1;
+	}
+	#slide2 {
+		z-index: 1;
+		overflow: hidden;
+		background-image: url("../bilder/elv.jpg");
+	}
+	#slide2:after {
+		background-image: url("../bilder/elv.jpg");
+		/*transform: translateZ(10px) scale(1);*/
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #222;
-}
+		z-index: 9999;
+		position: absolute;
+		top: 0;
+	}
+	#slide3:before {
+		background-image: url("../bilder/shopping2.jpg");
+	}
+	#slide4 {
+		/*FOOTER*/
 
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 0.8rem;
-  text-decoration: none;
-  transition: 0.3s;
-  font-size: 1rem;
-  font-family: 'Montserrat', serif;
-}
-
-ul.topnav li a:hover {background-color: rgb(252, 203, 55);}
-
-ul.topnav li.icon {
-    display: none;
-}
-
-ul.topnav li:not(:first-child) {display: none;}
-ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-}
-
-ul.topnav.responsive {
-      position: relative;
-}
-ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-ul.topnav.responsive li {
-    float: none;
-    display: inline;
-}
-ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-}
-
-
-
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  margin:0;
-  padding:0;
-  font-family: Nunito;
-  position: relative;
-  height: 100%;
-}
-
-header{
-  position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  z-index: 9999;
-}
-
-h1 {
-   font-family: 'Trirong', serif;
-   text-shadow: 2px 2px 4px black;
-   text-align: center;
-   font-size: 10vw;
-   color: #fff;
-   padding-top: 5rem;
-}
-
-h2 {
-   font-size: 4vw;
-   font-family: 'Trirong', serif;
-   padding-left: 1rem;
-   padding-top: 4rem;
-   width: 100rem;
-}
-
-h2 a {
-  color: black;
-  text-decoration: none;
-  text-align: left;
-}
-
-h2 a:hover {
-  text-decoration: underline;
-}
-
-p {
-  font-size: 0.75rem;
-  line-height: 150%;
-  color: white;
-}
-
-.box {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  height: 10%;
-  width: 0;
-  height: 0;
-  border-bottom: 10rem solid rgba(255,255,255,0.7);
-  border-right: 100vw solid transparent;
-  transition: 0.4s;
-}
-
-.box:hover {
-  border-bottom: 10rem solid rgba(255,255,255,1);
-}
-
-.slide {
-  position: relative;
-  padding: 25vh 0;
-  min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  transform-style: inherit;
-}
-.slide .box h2 {
-  position: relative;
-}
-
-.slide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
-}
-
-.slide:nth-child(2n) {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.slide:nth-child(2n+1) {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;
-}
-
-#title {
-  background-image: url("../bilder/brygga.jpg");
-  z-index: 10;
-}
-
-#slide1:before {
-  background-image: url("../bilder/gamlebyen_fredrikstad.jpg");
-  /*transform: translateZ(-1px) scale(2);*/
-  z-index:-1;
-}
-
-#slide2 {
-  z-index:1;
-  overflow: hidden;
-  background-image: url("../bilder/elv.jpg");
-}
-
-#slide2:after {
-  background-image: url("../bilder/elv.jpg");
-  /*transform: translateZ(10px) scale(1);*/
-  z-index: 9999;
-  position: absolute;
-  top: 0;
-}
-
-#slide3:before {
-  background-image: url("../bilder/shopping2.jpg");
-}
-
-#slide4 { /*FOOTER*/
-  background: #222;
-  z-index:3;
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-footer ul{
-  text-align: left;
-  list-style: none;
-  color: white;
-  padding-left: 0;
-}
-
-.footerslide {
-  position: relative;
-  padding: 10vh 0;
-  min-height: 20vh;
-  width: 100vw;
-  box-sizing: border-box;
-  transform-style: inherit;
-}
-
-.footerslide:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
-}
-
-.footerslide:nth-child(2n) {
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.footerslide:nth-child(2n+1) {
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.footerslide, .footerslide:before {
-  background: 50% 50% / cover;
-}
-
-}
+		background: #222;
+		z-index: 3;
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	footer ul {
+		text-align: left;
+		list-style: none;
+		color: white;
+		padding-left: 0;
+	}
+	.footerslide {
+		position: relative;
+		padding: 10vh 0;
+		min-height: 20vh;
+		width: 100vw;
+		box-sizing: border-box;
+		transform-style: inherit;
+	}
+	.footerslide:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.footerslide:nth-child(2n) {
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.footerslide:nth-child(2n+1) {
+		margin-left: auto;
+		margin-right: 0;
+	}
+	.footerslide,
+	.footerslide:before {
+		background: 50% 50% / cover;
+	}
 }
