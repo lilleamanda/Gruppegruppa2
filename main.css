@@ -81,6 +81,22 @@ main {
  body.kafeer .bilde-top { /*Skifter headerbilde på hver ulike side*/
 		 background-image: url("bilder/cafe_small.jpg");
  }
+ 
+ body.severdigheter .bilde-top { /*Skifter headerbilde på hver ulike side*/
+	 background-image: url("bilder/gamlebyen_fredrikstad.jpg");
+ }
+
+ body.shopping .bilde-top { /*Skifter headerbilde på hver ulike side*/
+	 background-image: url("bilder/shopping2.jpg");
+ }
+ 
+ body.restauranter .bilde-top { /*Skifter headerbilde på hver ulike side*/
+	 background-image: url("bilder/mat.jpg");
+ }
+ 
+ body.barer .bilde-top { /*Skifter headerbilde på hver ulike side*/
+	 background-image: url("bilder/barer.jpg");
+ }
 
  @media screen and (min-width:32em){
 	  body.kafeer .bilde-top{
