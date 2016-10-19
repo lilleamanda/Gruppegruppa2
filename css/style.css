@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Nunito);
-@import url(https://fonts.googleapis.com/css?family=Montserrat|Trirong);
+
 html {
 	height: 100%;
 	overflow: hidden;
@@ -232,14 +231,14 @@ footer ul {
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background-color: #222;
+		background-color: white;
 	}
 	ul.topnav li {
 		float: left;
 	}
 	ul.topnav li a {
 		display: inline-block;
-		color: white;
+		color: black;
 		text-align: center;
 		padding: 0.8rem;
 		text-decoration: none;
