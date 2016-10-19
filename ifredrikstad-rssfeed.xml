@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+<channel>
+
+<title>iFredrikstad</title>
+<description>iFredrikstad holder deg oppdatert på hva som er verdt å gjøre og se i Fredrikstad.</description>
+<link>#</link>
+
+<item>
+<title>Havnelageret</title>
+<description>Havnelageret holder åpent hver dag og er et sted yrende liv i sentrum av Fredrikstad.</description>
+<link>#</link>
+</item>
+
+<item>
+<title>Choco Loco</title>
+<description>Hos Choco Loco kan du la deg friste av deilig konfekt, makroner og småkaker. Alt lages i konditoriet i kjelleren.</description>
+<link>#</link>
+</item>
+
+
+<item>
+<title>Østfoldhallene</title>
+<description>Østfolds store handleområde. Her finner du alt fra klær og accesspirer, møbler, verktøy og hundeutstyr.</description>
+<link>#</link>
+</item>
+</channel>
+</rss>
